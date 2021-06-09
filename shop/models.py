@@ -34,7 +34,8 @@ class Category(models.Model):
     album = models.OneToOneField(
         ImageAlbum,
         on_delete=models.CASCADE,
-        null=True
+        null=True,
+        blank=True
     ) 
 
     class Meta:
